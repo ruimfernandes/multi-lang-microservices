@@ -4,6 +4,9 @@
   "description": "A basic project with small microservices built in different languages.",
   "main": "index.js",
   "dependencies": {
+    "axios": "^0.18.0",
+    "body-parser": "^1.18.3",
+    "express": "^4.16.4",
     "koa": "^2.6.2",
     "koa-bodyparser": "^4.2.1",
     "koa-logger": "^3.2.0",
@@ -15,8 +18,9 @@
     "babel-preset-env": "^1.6.0"
   },
   "scripts": {
-    "start": "npm run addition | npm run subtract",
+    "start": "npm run gateway | npm run addition | npm run subtract",
     "test": "echo \"Error: no test specified\" && exit 1",
+    "gateway": "npx babel-node api-gateway/index.js",
     "addition": "npx babel-node addition-microservice/index.js",
     "subtract": "go run subtract-microservice/main.go"
   },
