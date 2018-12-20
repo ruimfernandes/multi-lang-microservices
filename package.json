@@ -1,0 +1,33 @@
+{
+  "name": "multi-lang-microservices",
+  "version": "1.0.0",
+  "description": "A basic project with small microservices built in different languages.",
+  "main": "index.js",
+  "dependencies": {
+    "koa": "^2.6.2",
+    "koa-bodyparser": "^4.2.1",
+    "koa-logger": "^3.2.0",
+    "koa-router": "^7.4.0"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-core": "^6.26.0",
+    "babel-preset-env": "^1.6.0"
+  },
+  "scripts": {
+    "start": "npm run addition | npm run subtract",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "addition": "npx babel-node addition-microservice/index.js",
+    "subtract": "go run subtract-microservice/main.go"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ruimfernandes/multi-lang-microservices.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ruimfernandes/multi-lang-microservices/issues"
+  },
+  "homepage": "https://github.com/ruimfernandes/multi-lang-microservices#readme"
+}
